@@ -30,7 +30,7 @@ public class GestionUsuarios {
                 
                 switch (opcion) {
                     case 1:
-                        // Operación INSERT
+                        // Operación insertar datos
                         System.out.println("Ingrese el nombre de usuario:");
                         String nuevoUsuario = scanner.next();
                         System.out.println("Ingrese la contraseña:");
@@ -38,12 +38,12 @@ public class GestionUsuarios {
                         insertarUsuario(connection, nuevoUsuario, nuevaContrasena);
                         break;
                     case 2:
-                        // Operación SELECT
+                        // Operación consultar datos
                         System.out.println("Usuarios en la tabla:");
                         consultarUsuarios(connection);
                         break;
                     case 3:
-                        // Operación UPDATE
+                        // Operación actualizar datos
                         System.out.println("Ingrese el nombre de usuario a actualizar:");
                         String usuarioActualizar = scanner.next();
                         System.out.println("Ingrese la nueva contraseña:");
@@ -51,7 +51,7 @@ public class GestionUsuarios {
                         actualizarUsuario(connection, usuarioActualizar, nuevaContrasenaUpdate);
                         break;
                     case 4:
-                        // Operación DELETE
+                        // Operación borrar datos
                         System.out.println("Ingrese el nombre de usuario a eliminar:");
                         String usuarioEliminar = scanner.next();
                         eliminarUsuario(connection, usuarioEliminar);
@@ -73,7 +73,7 @@ public class GestionUsuarios {
         
     }
 
-    // ...  insertar, consultar, actualizar y eliminar usuarios
+    // ... funciones insertar, consultar, actualizar y eliminar usuarios
 
 
 
